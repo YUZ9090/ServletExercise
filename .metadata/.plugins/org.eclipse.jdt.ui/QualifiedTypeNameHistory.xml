@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="com.sun.net.httpserver.HttpServer"/>
     <fullyQualifiedTypeName name="javax.servlet.http.HttpServlet"/>
     <fullyQualifiedTypeName name="java.lang.String"/>
     <fullyQualifiedTypeName name="javax.servlet.http.HttpServletRequest"/>
@@ -54,4 +53,11 @@
     <fullyQualifiedTypeName name="org.comstudy21.myweb.service.MemberDeleteService"/>
     <fullyQualifiedTypeName name="org.comstudy21.myweb.service.MemberUpdateService"/>
     <fullyQualifiedTypeName name="org.comstudy21.myweb.service.MemberSearchService"/>
+    <fullyQualifiedTypeName name="org.junit.jupiter.api.Disabled"/>
+    <fullyQualifiedTypeName name="org.comstudy21.myapp.ex02.SimpleCalculator"/>
+    <fullyQualifiedTypeName name="org.junit.jupiter.api.DisplayNameGeneration"/>
+    <fullyQualifiedTypeName name="org.junit.jupiter.api.DisplayNameGenerator"/>
+    <fullyQualifiedTypeName name="org.junit.jupiter.api.DisplayNameGenerator.ReplaceUnderscores"/>
+    <fullyQualifiedTypeName name="org.junit.jupiter.api.DisplayName"/>
+    <fullyQualifiedTypeName name="org.junit.jupiter.api.condition.EnabledIfEnvironmentVariable"/>
 </qualifiedTypeNameHistroy>

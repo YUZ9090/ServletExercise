@@ -16,7 +16,7 @@ public class SaramDAO {
    public static final String UPDATE = "UPDATE SARAM SET NAME=?, PHONE=?, EMAIL=? WHERE ID=?";
    public static final String SELECT_ONE = "SELECT * FROM SARAM WHERE ID=?";
  //이름으로 검색하는용 (LIKE를쓰는게좋다)
-   public static final String SELECT_NAME = "SELECT * FROM SARAM WHERE NAME=?";
+   public static final String SELECT_NAME = "SELECT * FROM SARAM WHERE NAME LIKE '%'||?||'%'";
    public static final String DELETE = "DELETE FROM SARAM WHERE ID=?";
    
    
@@ -65,16 +65,32 @@ public class SaramDAO {
 	   }
 	   
    
-	   public SaramDTO findByName(String name) throws SQLException {
-		   conn = JdbcUtil.getConnection();
-		   PreparedStatement pstmt = conn.prepareStatement(SELECT_NAME);
-		   pstmt.setString(1,name);
-		   
-		   pstmt.executeUpdate();
-		   
-	      return dto;
-	   }
+   public List<SaramDTO> findByName(SaramDTO dto){
+	   conn = JdbcUtil.getConnection();
+	   List<SaramDTO> list=null;
+	   try {
+			pstmt = conn.prepareStatement(SELECT_NAME);
+			pstmt.setString(1,dto.getName());
+			rs = pstmt.executeQuery();
+			while(rs.next()) {
+				if(list==null) {
+					list = new ArrayList();
+				}
+				int id =rs.getInt(1);
+				String name = rs.getString(2); //순서로넣는거임
+				String phone = rs.getString(3);
+				String email = rs.getString(4);
+				list.add(new SaramDTO(id,name,phone,email));
+			}
+			
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}finally {
+			JdbcUtil.close(conn,pstmt,rs);
+		}
 	   
+      return null;
+   }
 	   public void update(SaramDTO dto) throws SQLException {
 		   conn = JdbcUtil.getConnection();
 		   PreparedStatement pstmt = conn.prepareStatement(UPDATE);
