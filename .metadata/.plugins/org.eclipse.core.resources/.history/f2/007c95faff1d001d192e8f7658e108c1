@@ -1,0 +1,10 @@
+package org.comstudy21.myweb.member.service;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+public class MemberJoinService {
+	public void service(HttpServletRequest req, HttpServletResponse resp) {
+		
+	}
+}

@@ -1,0 +1,30 @@
+package org.comstudy21.myweb;
+
+import java.io.IOException;
+
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+public class DispatcherServlet extends HttpServlet {
+   
+   protected void doProcess(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+      System.out.println(">>> DispatcherServlet ...");
+      String ctxPath = req.getContextPath();
+      String reqUri = req.getRequestURI();
+      
+      System.out.println("ctxPath : " + ctxPath);
+      System.out.println("reqUri : " + reqUri);
+   }
+   
+   @Override
+   protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+      doProcess(req, resp);
+   }
+   
+   @Override
+   protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+      doProcess(req, resp);
+   }
+}

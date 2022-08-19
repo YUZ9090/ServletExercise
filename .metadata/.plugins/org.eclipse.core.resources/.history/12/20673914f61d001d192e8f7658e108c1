@@ -1,0 +1,27 @@
+package org.comstudy21.myweb.member;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import org.comstudy21.myweb.controller.MyController;
+
+public class MemberController implements MyController {
+	//private MemberDAO memberDAO = new MemberDAO();
+	
+
+	@Override
+	public String handleRequest(HttpServletRequest req, HttpServletResponse resp) {
+		//System.out.println(">>>Member controller...");
+		List<MemberDTO> memList = memberDAO.selectAll();
+		
+		
+		return "member/list";
+		
+		
+		//컨트롤러내부에서도 기능구별이필요함.
+		//하지만 여기에전부구현하면 넘 복잡해짐
+		//콘트롤러를 매핑한것처럼 서비스를 여기서 매핑해준당
+		
+	}
+
+}

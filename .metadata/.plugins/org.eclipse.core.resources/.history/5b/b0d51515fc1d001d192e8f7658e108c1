@@ -1,0 +1,52 @@
+package org.comstudy21.myweb.member;
+
+import java.util.List;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import org.comstudy21.myweb.controller.MyController;
+
+public class MemberController implements MyController {
+	//MyController에서 총괄해 넣어줫기때문에 여기서 따로안해도됨.
+	//private MemberDAO memberDAO = new MemberDAO();
+	
+
+	@Override
+	public String handleRequest(HttpServletRequest req, HttpServletResponse resp) {
+		//System.out.println(">>>Member controller...");
+
+		System.out.println("---- MemberController ----");
+		
+		if("POST".equals(req.getMethod())) {
+			//내용 저장 후 새로고침
+			return ";
+		}
+		
+		
+		
+		String fileName = (String)req.getAttribute("fileName");
+		System.out.println("fileName => " + fileName);
+		
+		String viewName = "member/list";
+		if("/list".equals(fileName)) {
+			List<MemberDTO> memList = memberDAO.selectAll();
+			req.setAttribute("memList", memList);
+			viewName = "member/list";
+		}else if("/join".equals(fileName)) {
+			viewName = "member/join";
+		}
+		
+		
+		
+		
+		return viewName;
+		
+		
+		//컨트롤러내부에서도 기능구별이필요함.
+		//하지만 여기에전부구현하면 넘 복잡해짐
+		//콘트롤러를 매핑한것처럼 서비스를 여기서 매핑해준당
+		
+	}
+
+}

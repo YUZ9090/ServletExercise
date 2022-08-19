@@ -1,0 +1,28 @@
+package org.comstudy21.myweb.controller;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+public class HomeController {
+	static Map<String,String> items = new HashMap();
+	static {
+		//key를 타이틀(게시판 등) value 를 링크로
+		items.put("회원목록","member/list.do");
+		items.put("게시판","bbs/list.do");
+		items.put("쇼핑몰","shop/list.do");
+	}
+
+	public String handleRequest(HttpServletRequest req, HttpServletResponse resp) {
+		System.out.println(">>>home controller...");
+		
+		req.setAttribute("message", "Hello World!");
+		req.setAttribute("items", items);
+		
+		return "/WEB-INF/views/home.jsp";
+	}
+
+}

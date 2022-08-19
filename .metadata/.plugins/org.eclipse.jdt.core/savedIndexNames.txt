@@ -1,0 +1,25 @@
+INDEX VERSION 1.131+C:\Users\BIT\Documents\yuz\java_workspace\.metadata\.plugins\org.eclipse.jdt.core
+2307259947.index
+627291126.index
+465922996.index
+1443409745.index
+166011551.index
+2164637197.index
+2059434200.index
+324002015.index
+203859909.index
+4274794091.index
+342218251.index
+3540981374.index
+1657097241.index
+320404878.index
+2314401562.index
+462886159.index
+206585702.index
+2786261020.index
+3813982829.index
+678927508.index
+3347650676.index
+2044961835.index
+1115270885.index
+2543808867.index

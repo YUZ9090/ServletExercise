@@ -1,0 +1,16 @@
+package org.comstudy21.myweb.controller;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+public class HomeController {
+
+	public String handleRequest(HttpServletRequest req, HttpServletResponse resp) {
+		System.out.println(">>>home controller...");
+		
+		req.setAttribute("message", "Hello World!");
+		
+		return "/WEB-INF/views/home.jsp";
+	}
+
+}

@@ -1,0 +1,29 @@
+package org.comstudy21.myweb.controller;
+
+import java.sql.SQLException;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import org.comstudy21.myweb.service.SaramListService;
+
+
+
+public class SaramController implements MyController {
+	public String handleRequest(HttpServletRequest req, HttpServletResponse resp) throws SQLException {
+		
+		
+		String fileName = (String)req.getAttribute("fileName");
+		//System.out.println("fileName => " + fileName);
+		
+		String viewName = "member/list";
+		if("/list".equals(fileName)) {
+			viewName = new SaramListService().service(req, resp);
+		}else if("/join".equals(fileName)) {
+			
+		}
+		
+		
+		return viewName;
+	}
+}

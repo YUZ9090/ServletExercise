@@ -1,0 +1,9 @@
+package dynamic_web_proj_00;
+
+public class DispatcherServlet {
+
+	public DispatcherServlet() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

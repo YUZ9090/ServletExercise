@@ -1,0 +1,39 @@
+package org.comstudy21.myweb;
+
+import java.io.IOException;
+
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import static org.comstudy21.myweb.controller.MyUtil.initPathAttr;
+
+public class DispatcherServlet extends HttpServlet{
+	
+	protected void doProcess(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+		initPathAttr(req,resp);
+		String path =req.getAttribute("path");
+		String fileName =req.getAttribute("path");
+		String dirName =req.getAttribute("path");
+		
+	}
+	
+	
+	@Override
+	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+		// TODO Auto-generated method stub
+		doProcess(req, resp);
+	}
+	
+	@Override
+	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+		// TODO Auto-generated method stub
+		doProcess(req, resp);
+	}
+
+	public DispatcherServlet() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

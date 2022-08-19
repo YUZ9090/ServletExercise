@@ -1,0 +1,28 @@
+package org.comstudy21.myweb.controller;
+
+import java.util.HashMap;
+
+import org.comstudy21.myweb.bbs.BoardController;
+import org.comstudy21.myweb.member.MemberController;
+import org.comstudy21.myweb.shop.ShopController;
+
+
+//콘트롤러를 총괄하는 콭드롤러. 매핑
+public class HandlerMapping {
+	HashMap<String,MyController> map = new HashMap();
+	
+	public HandlerMapping() {
+		map.put("/member", new MemberController());
+		map.put("/bbs", new BoardController());
+		map.put("/shop", new ShopController());
+		
+	}
+	
+	
+	//해쉬멥에 컨트롤러를 갖고오게하는거임
+	public MyController getController(String key) {
+		return map.get(key);
+		
+	}
+
+}

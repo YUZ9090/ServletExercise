@@ -1,0 +1,12 @@
+package org.comstudy21.myweb.member;
+
+public class MemberDTO {
+	int no;
+	String name;
+	String phone;
+	
+	public MemberDTO{
+		
+	}
+
+}

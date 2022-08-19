@@ -1,0 +1,25 @@
+<%@page import="java.sql.Statement"%>
+<%@page import="java.sql.ResultSet"%>
+<%@page import="java.sql.Connection"%>
+<%@page import="org.comstudy21.myweb.util.JdbcUtil"%>
+<%@ page language="java" contentType="text/html; charset=EUC-KR"
+    pageEncoding="EUC-KR"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+</head>
+<body>
+
+<%
+	Connection conn = JdbcUtil.getConnection();
+	out.println(conn);
+	
+	//saram 테이블 내용 읽어올거임
+	Statement stmt =conn.createStatement(); //conn을 이용해서 갖고올수있음
+	ResultSet rs =stmt.executeQuery("SELECT * FROM SARAM");
+	
+%>
+</body>
+</html>

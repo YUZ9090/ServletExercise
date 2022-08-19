@@ -1,0 +1,42 @@
+package org.comstudy21.myweb;
+
+import java.io.IOException;
+
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+public class DispatcherServlet extends HttpServlet{
+	
+	protected void doProcess(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+		// TODO Auto-generated method stub
+		String reqUri = req.getRequestURI();
+		String ctxPath = req.getContextPath();
+		int beginIndex= ctxPath.length();
+		int endIndex = reqUri.lastIndexOf(".");
+		String path =reqUriString.substring(beginIndex,endIndex);
+		
+		System.out.println(">>> DispatcherServlet...");
+		System.out.println("reqUri: "+ reqUri);
+		System.out.println("path = "+path);
+	}
+	
+	
+	@Override
+	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+		// TODO Auto-generated method stub
+		doProcess(req, resp);
+	}
+	
+	@Override
+	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+		// TODO Auto-generated method stub
+		doProcess(req, resp);
+	}
+
+	public DispatcherServlet() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

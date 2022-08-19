@@ -1,0 +1,10 @@
+package org.comstudy21.myweb.controller;
+
+public class PathVO {
+	String path =req.getAttribute("path");
+	String fileName =req.getAttribute("fileName");
+	String dirName =req.getAttribute("dirName");
+	String suffix =req.getAttribute("suffix");
+	String prefix =req.getAttribute("prefix");
+
+}

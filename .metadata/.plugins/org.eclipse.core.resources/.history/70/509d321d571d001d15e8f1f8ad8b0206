@@ -1,0 +1,16 @@
+package org.comstudy21.myweb.controller;
+import java.util.HashMap;
+
+
+//콘트롤러를 총괄하는 콭드롤러. 매핑
+public class HandlerMapping {
+	HashMap<String,MyController> map = new HashMap();
+	
+	public HandlerMapping() {
+		map.put("/member", new MemberController());
+		map.put("/bbs", new BoardCotroller());
+		map.put("/shop", new ShopController());
+		
+	}
+
+}

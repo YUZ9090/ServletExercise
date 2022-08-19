@@ -1,0 +1,23 @@
+<%@page import="java.util.Map"%>
+<%@ page language="java" contentType="text/html; charset=EUC-KR"
+    pageEncoding="EUC-KR"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+</head>
+<body>
+
+<p>message: ${message}</p>
+
+<h1> 길동이 홈페이지 home</h1>
+<h3>홈페이지에 어서오세요</h3>
+<hr/>
+<%
+Map items = (Map)request.getAttribute("items");
+%>
+
+
+</body>
+</html>

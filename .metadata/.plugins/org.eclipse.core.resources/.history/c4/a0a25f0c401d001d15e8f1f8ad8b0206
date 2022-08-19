@@ -1,0 +1,14 @@
+package org.comstudy21.myweb.member;
+
+public class MemberDAO {
+
+	private static List<MemberDTO> memberList;
+	static {
+		memberList = Arrays.asList(new MemberDTO())
+	}
+	
+	public List<MemberDTO> selectAll(){
+		return memberList;
+		
+	}
+}

@@ -1,0 +1,19 @@
+package org.comstudy21.myweb.bbs.service;
+
+import java.util.List;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import org.comstudy21.myweb.bbs.BoardDTO;
+import static org.comstudy21.myweb.bbs.BoardDAO;
+
+
+public class BoardListService {
+	
+	public String service(HttpServletRequest req, HttpServletResponse resp) {
+		List<BoardDTO> bbsList = boardDAO.selectAll();
+		
+	}
+
+}

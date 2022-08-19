@@ -1,0 +1,35 @@
+package org.comstudy21.myweb.controller;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+
+
+public class SaramController implements MyController {
+	@Override
+	public String handleRequest(HttpServletRequest req, HttpServletResponse resp) {
+
+		System.out.println("---- MemberController ----");
+		
+		
+		String fileName = (String)req.getAttribute("fileName");
+
+		
+		String viewName = "member/list";
+		/*
+		if("/list".equals(fileName)) {
+			viewName = new MemberListService().service(req, resp);
+		}else if("/join".equals(fileName)) {
+			viewName = new MemberJoinService().service(req,resp);
+		}
+		*/
+		
+
+		
+		
+		return viewName;
+		
+
+	}
+
+}

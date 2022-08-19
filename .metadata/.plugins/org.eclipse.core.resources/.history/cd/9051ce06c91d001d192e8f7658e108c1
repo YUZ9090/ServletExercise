@@ -1,0 +1,41 @@
+package org.comstudy21.myweb.controller;
+
+import java.io.IOException;
+
+import javax.servlet.RequestDispatcher;
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+public class DispatcherServlet extends HttpServlet {
+			 
+	//doget dopost 한번에처리하기위함
+   protected void doProcess(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+      System.out.println(req.getMethod() + " >>> DispatcherServlet ...");
+      
+      //home.jsp 페이지로 forward 시키기
+      String reqUri = req.getRequestURI();
+      String path = reqUri.substring(req.getContextPath().length());
+      System.out.println(reqUri);
+      System.out.println(path);
+      
+      //WebContent 가 루트임
+      //파일 우클릭 -> copy Qualified Name하면 경로까지 복사됨
+      ///day02_mvc_proj/WebContent/까진 필요없읜 지운다
+      //컨텍스트/home.do (컨텍스트는 루트라고생각하면됨
+      RequestDispatcher dispatcher  = req.getRequestDispatcher("/WEB-INF/views/home.jsp");
+      dispatcher.foward(req.resp);
+      
+   }
+   
+   @Override
+   protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+      doProcess(req, resp);
+   }
+   
+   @Override
+   protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+      doProcess(req, resp);
+   }
+}

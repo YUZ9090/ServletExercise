@@ -1,0 +1,11 @@
+package org.comstudy21.myweb.bbs.service;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+public class BoardWriteService {
+	public String service(HttpServletRequest req, HttpServletResponse resp) {
+		
+		return "bbs/write";
+	}
+}

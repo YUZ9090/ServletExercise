@@ -1,0 +1,17 @@
+package org.comstudy21.myweb.controller;
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class HandlerMapping {
+	
+	private static final Map<String,MyController> ctrlMap = new HashMap<String,MyController>();
+	static {
+		ctrlMap.put("", new HomeController());
+		ctrlMap.put("/member", new SaramController());
+		//ctrlMap.put("/bbs", new BoardController());
+		//ctrlMap.put("/shop", new ShopController());
+	}
+	
+
+}

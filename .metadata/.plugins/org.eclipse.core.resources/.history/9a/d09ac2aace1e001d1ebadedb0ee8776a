@@ -1,0 +1,11 @@
+package org.comstudy21.myweb.controller;
+
+public class Snippet {
+	create table saram(
+	id int primary key auto_increment,
+	name varchar2(20) not null,
+	phone varchar2(20),
+	email varchar2(100)
+	);
+}
+
