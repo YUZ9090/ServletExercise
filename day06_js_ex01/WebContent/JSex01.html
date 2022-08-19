@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+</head>
+<style>
+h2{
+	color:red;
+}
+</style>
+<body>
+
+<h1>길동이의 홈페이지</h1>
+<h2>자바스크립트 연습</h2>
+
+<script>
+console.log(document);
+document.body.bgColor="yellow";
+
+var h2El = document.querySelector("h2");
+console.dir(h2El);
+
+h2El.onclick = function(){
+
+	h2El.style.backgroundColor ="blue";
+	h2El.style.color="yellow";
+}
+</script>
+
+</body>
+</html>

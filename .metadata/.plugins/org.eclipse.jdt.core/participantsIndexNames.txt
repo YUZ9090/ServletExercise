@@ -15,6 +15,8 @@ C:\Users\BIT\Documents\yuz\java_workspace\.metadata\.plugins\org.eclipse.jst.jsp
 \day01_mvc_proj\src
 C:\Users\BIT\Documents\yuz\java_workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2632340503.index
 \day01_mvc_proj_ex\src
+C:\Users\BIT\Documents\yuz\java_workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2551888639.index
+\day06_js_ex01\src
 C:\Users\BIT\Documents\yuz\java_workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2706094352.index
 \day3_mvc_proj\src
 C:\Users\BIT\Documents\yuz\java_workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\4247978904.index
@@ -31,6 +33,8 @@ C:\Users\BIT\Documents\yuz\java_workspace\.metadata\.plugins\org.eclipse.jst.jsp
 \day01_mvc_proj\src
 C:\Users\BIT\Documents\yuz\java_workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1846345767.index
 \day3_mvc_proj\src
+C:\Users\BIT\Documents\yuz\java_workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2941597315.index
+\day06_js_ex01\src
 C:\Users\BIT\Documents\yuz\java_workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1157415188.index
 \day01_mvc_proj_ex\src
 C:\Users\BIT\Documents\yuz\java_workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2030079874.index
