@@ -7,15 +7,25 @@ import java.sql.SQLException;
 import java.sql.Statement;
 
 public class JdbcUtil {
-   public static Connection getConnection() {
-      String url = " jdbc:h2:tcp://localhost/~/test".trim();
-      String user = "sa";
-      String password = "12345";
+	
+	public static Connection getConnection() {
+		String url = "jdbc:h2:tcp://localhost/~/test".trim();
+	    String user = "sa";
+	    String password = "12345";
+		return getConnection( url,  user,  password);
+	}
+	//커넥션정보넣어줘야 연결가능
+	
+	
+   public static Connection getConnection(String url, String user, String password) {
+      //String url = "jdbc:h2:tcp://localhost/~/test".trim();
+      //String user = "sa";
+      //String password = "12345";
       Connection conn = null;
       // 드라이버
       try {
          Class.forName("org.h2.Driver");
-         conn = DriverManager.getConnection(url, user, password);
+         conn = DriverManager.getConnection(url,  user,  password);
          System.out.println(conn);
       } catch (ClassNotFoundException e) {
          System.out.println("드라이버 검색 실패!");

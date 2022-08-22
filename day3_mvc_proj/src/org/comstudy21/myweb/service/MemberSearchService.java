@@ -17,7 +17,7 @@ public class MemberSearchService {
 		if("POST".equals(req.getMethod())) {
 			int id =Integer.parseInt( req.getParameter("id"));
 			
-			SaramDTO one = saramDAO.selectOne(id);
+			SaramDTO one = saramDAO.findById(id);
 			
 			req.setAttribute("result", one);
 			return "member/search";
