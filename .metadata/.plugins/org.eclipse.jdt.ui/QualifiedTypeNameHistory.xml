@@ -1,17 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="java.util.Iterator"/>
-    <fullyQualifiedTypeName name="org.comstudy21.myweb.member.MemberController"/>
-    <fullyQualifiedTypeName name="org.comstudy21.myweb.bbs.BoardController"/>
-    <fullyQualifiedTypeName name="org.comstudy21.myweb.shop.ShopController"/>
-    <fullyQualifiedTypeName name="org.comstudy21.myweb.controller.HandlerMapping"/>
-    <fullyQualifiedTypeName name="org.comstudy21.myweb.shop.ShopDAO"/>
-    <fullyQualifiedTypeName name="org.comstudy21.myweb.member.MemberDTO"/>
-    <fullyQualifiedTypeName name="sun.util.locale.StringTokenIterator"/>
-    <fullyQualifiedTypeName name="org.comstudy21.myweb.member.service.MemberJoinService"/>
-    <fullyQualifiedTypeName name="org.comstudy21.myweb.member.service.MemberListService"/>
-    <fullyQualifiedTypeName name="java.util.ArrayList"/>
-    <fullyQualifiedTypeName name="org.comstudy21.myweb.bbs.service.BoardListService"/>
     <fullyQualifiedTypeName name="org.comstudy21.myweb.bbs.service.BoardWriteService"/>
     <fullyQualifiedTypeName name="org.comstudy21.myweb.bbs.service.BoardUpdateService"/>
     <fullyQualifiedTypeName name="org.comstudy21.myweb.bbs.service.BoardDeleteService"/>
@@ -60,4 +48,16 @@
     <fullyQualifiedTypeName name="java.lang.Integer"/>
     <fullyQualifiedTypeName name="org.comstudy21.myweb.service.menuService"/>
     <fullyQualifiedTypeName name="org.comstudy21.myweb.service.MenuService"/>
+    <fullyQualifiedTypeName name="org.comstudy21.myapp.dbcp.DAO"/>
+    <fullyQualifiedTypeName name="org.comstudy21.myapp.member.model.MemberDAO"/>
+    <fullyQualifiedTypeName name="org.comstudy21.myapp.dbcp.JdbcUtil"/>
+    <fullyQualifiedTypeName name="org.apache.catalina.connector.Response"/>
+    <fullyQualifiedTypeName name="javax.security.auth.message.callback.PrivateKeyCallback.Request"/>
+    <fullyQualifiedTypeName name="javax.security.auth.message.callback.SecretKeyCallback.Request"/>
+    <fullyQualifiedTypeName name="java.sql.Date"/>
+    <fullyQualifiedTypeName name="javax.servlet.http.HttpServlet"/>
+    <fullyQualifiedTypeName name="java.io.PrintWriter"/>
+    <fullyQualifiedTypeName name="java.util.Enumeration"/>
+    <fullyQualifiedTypeName name="java.util.Date"/>
+    <fullyQualifiedTypeName name="javax.servlet.http.Cookie"/>
 </qualifiedTypeNameHistroy>

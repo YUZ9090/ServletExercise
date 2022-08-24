@@ -10,7 +10,7 @@
 	<item key="Replace" value="true"/>
 	<item key="Comments" value="true"/>
 	<item key="InstanceOf" value="false"/>
-	<item key="org.eclipse.jdt.ui.lastextjar" value="E:\source\lib"/>
+	<item key="org.eclipse.jdt.ui.lastextjar" value="C:\h2\bin"/>
 	<section name="org.eclipse.jdt.internal.ui.packageview.PackageExplorerPart">
 		<item key="group_libraries" value="true"/>
 		<item key="layout" value="2"/>
@@ -24,7 +24,7 @@
 		<item key="org.eclipse.jdt.ui.typecomment.deprecated" value="true"/>
 	</section>
 	<section name="NewClassWizardPage">
-		<item key="create_constructor" value="false"/>
+		<item key="create_constructor" value="true"/>
 		<item key="create_unimplemented" value="true"/>
 	</section>
 	<section name="completion_proposal_size">
@@ -161,6 +161,7 @@
 		<item key="JarManifestWizardPage.MANIFEST_LOCATION" value=""/>
 		<item key="JarManifestWizardPage.SEAL_JAR" value="false"/>
 		<list key="JarPackageWizardPage.DESTINATION_NAMES_ID">
+			<item value="E:\source\lib\MyDbcpJndiDao.jar"/>
 			<item value="E:\source\lib\jdbcUtil.jar"/>
 		</list>
 	</section>

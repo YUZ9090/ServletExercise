@@ -152,7 +152,18 @@
              Note: The pattern used is equivalent to using pattern="common" -->
         <Valve className="org.apache.catalina.valves.AccessLogValve" directory="logs" pattern="%h %l %u %t &quot;%r&quot; %s %b" prefix="localhost_access_log" suffix=".txt"/>
 
-      <Context docBase="spring_mvc_proj_00" path="/myweb" reloadable="true" source="org.eclipse.jst.jee.server:spring_mvc_proj_00"/><Context docBase="dynamic_web_proj_00" path="/dynamic_web_proj_00" reloadable="true" source="org.eclipse.jst.jee.server:dynamic_web_proj_00"/><Context docBase="day01_mvc_proj" path="/day01_mvc_proj" reloadable="true" source="org.eclipse.jst.jee.server:day01_mvc_proj"/><Context docBase="day01_mvc_proj_ex" path="/day01_mvc_proj_ex" reloadable="true" source="org.eclipse.jst.jee.server:day01_mvc_proj_ex"/><Context docBase="day02_mvc_proj" path="/day02_mvc_proj" reloadable="true" source="org.eclipse.jst.jee.server:day02_mvc_proj"/><Context docBase="day3_mvc_proj" path="/day3_mvc_proj" reloadable="true" source="org.eclipse.jst.jee.server:day3_mvc_proj"/><Context docBase="day05_js_ex01" path="/day05_js_ex01" reloadable="true" source="org.eclipse.jst.jee.server:day05_js_ex01"/><Context docBase="homework_proj01" path="/homework_proj01" reloadable="true" source="org.eclipse.jst.jee.server:homework_proj01"/></Host>
+      <Context docBase="spring_mvc_proj_00" path="/myweb" reloadable="true" source="org.eclipse.jst.jee.server:spring_mvc_proj_00"/>
+      <Context docBase="dynamic_web_proj_00" path="/dynamic_web_proj_00" reloadable="true" source="org.eclipse.jst.jee.server:dynamic_web_proj_00"/>
+      <Context docBase="day01_mvc_proj" path="/day01_mvc_proj" reloadable="true" source="org.eclipse.jst.jee.server:day01_mvc_proj"/>
+      <Context docBase="day01_mvc_proj_ex" path="/day01_mvc_proj_ex" reloadable="true" source="org.eclipse.jst.jee.server:day01_mvc_proj_ex"/>
+      <Context docBase="day02_mvc_proj" path="/day02_mvc_proj" reloadable="true" source="org.eclipse.jst.jee.server:day02_mvc_proj"/>
+      <Context docBase="day3_mvc_proj" path="/day3_mvc_proj" reloadable="true" source="org.eclipse.jst.jee.server:day3_mvc_proj"/>
+      <Context docBase="day05_js_ex01" path="/day05_js_ex01" reloadable="true" source="org.eclipse.jst.jee.server:day05_js_ex01"/>
+      <Context docBase="homework_proj01" path="/homework_proj01" reloadable="true" source="org.eclipse.jst.jee.server:homework_proj01"/>
+      
+      
+      
+      <Context docBase="day07_jsp_ex02" path="/day07_jsp_ex02" reloadable="true" source="org.eclipse.jst.jee.server:day07_jsp_ex02"/><Context docBase="day07_jsp_ex01" path="/day07_jsp_ex01" reloadable="true" source="org.eclipse.jst.jee.server:day07_jsp_ex01"/><Context docBase="day06_jsp_ex01" path="/org.comstudy21.myweb" reloadable="true" source="org.eclipse.jst.jee.server:day06_jsp_ex01"/><Context docBase="day08_jsp_ex01" path="/day08_jsp_ex01" reloadable="true" source="org.eclipse.jst.jee.server:day08_jsp_ex01"/><Context docBase="carshop_proj" path="/carshop_proj" reloadable="true" source="org.eclipse.jst.jee.server:carshop_proj"/></Host>
     </Engine>
   </Service>
 </Server>

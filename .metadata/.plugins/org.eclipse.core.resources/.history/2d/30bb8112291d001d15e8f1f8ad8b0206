@@ -1,9 +1,0 @@
-package org.comstudy21.myweb;
-
-public class DispatcherServlet {
-
-	public DispatcherServlet() {
-		// TODO Auto-generated constructor stub
-	}
-
-}
