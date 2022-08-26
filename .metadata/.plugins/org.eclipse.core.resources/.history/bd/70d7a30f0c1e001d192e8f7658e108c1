@@ -1,8 +1,0 @@
-package org.comstudy21.myweb.bbs;
-
-public class BoardDTO {
-	int no;
-	   String title;
-	   String article;
-
-}

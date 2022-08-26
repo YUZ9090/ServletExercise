@@ -3,6 +3,8 @@ C:\Users\BIT\Documents\yuz\java_workspace\.metadata\.plugins\org.eclipse.jst.jsp
 \day01_mvc_proj_ex\src
 C:\Users\BIT\Documents\yuz\java_workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2630356294.index
 \spring_mvc_proj_00\src\main\java
+C:\Users\BIT\Documents\yuz\java_workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\552723008.index
+\day08_websocket\src
 C:\Users\BIT\Documents\yuz\java_workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3023226742.index
 \day02_mvc_proj\src
 C:\Users\BIT\Documents\yuz\java_workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1876056785.index
@@ -47,6 +49,8 @@ C:\Users\BIT\Documents\yuz\java_workspace\.metadata\.plugins\org.eclipse.jst.jsp
 \day08_jsp_ex01\src
 C:\Users\BIT\Documents\yuz\java_workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\4035453392.index
 \homework_proj01\src
+C:\Users\BIT\Documents\yuz\java_workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2868278477.index
+\day08_websocket\src
 C:\Users\BIT\Documents\yuz\java_workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2307131797.index
 \homework_proj01\src
 C:\Users\BIT\Documents\yuz\java_workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\4127928963.index
@@ -71,9 +75,9 @@ C:\Users\BIT\Documents\yuz\java_workspace\.metadata\.plugins\org.eclipse.jst.jsp
 \homework_proj01\src
 C:\Users\BIT\Documents\yuz\java_workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3354355406.index
 \day01_mvc_proj\src
-C:\Users\BIT\Documents\yuz\java_workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1999275167.index
-\homework_proj01\src
 C:\Users\BIT\Documents\yuz\java_workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1703855316.index
+\homework_proj01\src
+C:\Users\BIT\Documents\yuz\java_workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1999275167.index
 \homework_proj01\src
 C:\Users\BIT\Documents\yuz\java_workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3305670891.index
 \day01_mvc_proj\src

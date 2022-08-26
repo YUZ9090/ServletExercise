@@ -163,7 +163,7 @@
       
       
       
-      <Context docBase="day07_jsp_ex02" path="/day07_jsp_ex02" reloadable="true" source="org.eclipse.jst.jee.server:day07_jsp_ex02"/><Context docBase="day07_jsp_ex01" path="/day07_jsp_ex01" reloadable="true" source="org.eclipse.jst.jee.server:day07_jsp_ex01"/><Context docBase="day06_jsp_ex01" path="/org.comstudy21.myweb" reloadable="true" source="org.eclipse.jst.jee.server:day06_jsp_ex01"/><Context docBase="day08_jsp_ex01" path="/day08_jsp_ex01" reloadable="true" source="org.eclipse.jst.jee.server:day08_jsp_ex01"/><Context docBase="carshop_proj" path="/carshop_proj" reloadable="true" source="org.eclipse.jst.jee.server:carshop_proj"/></Host>
+      <Context docBase="day07_jsp_ex02" path="/day07_jsp_ex02" reloadable="true" source="org.eclipse.jst.jee.server:day07_jsp_ex02"/><Context docBase="day07_jsp_ex01" path="/day07_jsp_ex01" reloadable="true" source="org.eclipse.jst.jee.server:day07_jsp_ex01"/><Context docBase="day06_jsp_ex01" path="/org.comstudy21.myweb" reloadable="true" source="org.eclipse.jst.jee.server:day06_jsp_ex01"/><Context docBase="day08_jsp_ex01" path="/day08_jsp_ex01" reloadable="true" source="org.eclipse.jst.jee.server:day08_jsp_ex01"/><Context docBase="carshop_proj" path="/carshop_proj" reloadable="true" source="org.eclipse.jst.jee.server:carshop_proj"/><Context docBase="day08_websocket" path="/day08_websocket" reloadable="true" source="org.eclipse.jst.jee.server:day08_websocket"/></Host>
     </Engine>
   </Service>
 </Server>

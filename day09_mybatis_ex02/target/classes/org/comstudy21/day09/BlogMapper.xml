@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="BlogMapper">
+<!-- namespace 는 내가이름짓기나름, resultType 은 실제 존재하는 클래스타입이어야함 -->
+  <select id="selectBlog" resultType="org.comstudy21.day09.BlogMemo">
+    select * from BlogMemo where idx = #{idx}
+  </select>
+</mapper>
