@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="Mapper">
+
+  
+    <select id="selectAll" resultType="org.comstudy21.myapp.bbs.BoardDTO">
+   		select * from board
+  	</select>
+  
+  	<select id="findByNum" resultType="org.comstudy21.myapp.bbs.BoardDTO">
+		Select * from board where num = #{num}
+	</select>
+  
+  	<insert id="write" parameterType="java.util.Map">
+		INSERT INTO board(num, author, email, title, content, passwd) VALUES(seq_bbs.nextval, #{author}, #{email}, #{title}, #{content}, #{passwd})
+	</insert>
+	
+	<insert id="update" parameterType="java.util.Map">
+		update board set author=#{author}, email=#{email}, title=#{title}, content=#{content}, passwd=#{passwd} where num=#{num}
+	</insert>
+	
+	<insert id="delete" parameterType="java.util.Map">
+		delete from board where num=#{num}
+	</insert>
+	
+	
+</mapper>
